@@ -1,0 +1,223 @@
+
+
+/* 
+    Projeto:
+
+    Box Model
+    Box Sizing
+    Flexbox
+*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap');
+
+
+/* reset de propriedades */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+body {
+    background-color: #EFEFEF;
+    font-family: cursive;
+    color: #A6A6A6;
+}
+/* **************** Cabeçalho ************** */
+header {
+
+    background-color: #6B6B6B;
+    /* padding-left: 10%;
+    padding-right: 10%; */
+    
+}
+
+.header-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;/* linha */
+    align-items: center;/* coluna */
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    /* border: 3px solid white; */
+}
+nav a {
+    padding: 30px 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    color: white;
+    text-decoration: none;
+    
+    transition: background-color 0.4s;
+}
+
+nav a:hover {
+    background-color: #878787;
+}
+
+h1 {
+    /* align-self: center; */
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    color: white;
+}
+
+h1 span {
+    font-weight: 300;
+    font-family: cursive;
+    font-style: italic;
+}
+
+/* *********** MAIN ****************** */
+
+main {
+    width: 80%;
+    display: flex;
+    background-color: transparent;
+    /* height: 500px; */
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+
+    max-width: 1200px;
+
+    /* valores padrao 
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+     */
+}
+
+#conteudo{
+    width: 70%;
+    background-color: white;
+    padding-bottom: 30px;
+}
+
+aside{
+    width: 25%;
+    background-color:transparent;
+}
+
+#lapis{
+    width: 100%;
+}
+
+h2{
+    font-size: 16px;
+    /* margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px; 
+    short line
+    
+    seleção multipla seleciona o que qr
+    exemplo 10px depois ctrl+d depois ctrl+d depois ctrl+d, terminou esc*/
+    margin: 10px;
+    font-weight: 400;
+}
+
+p{
+    margin: 10px;
+    font-weight: 400;
+}
+
+/* **************** aside ************** */
+
+.aside-box{
+    background-color: white;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+
+}
+
+.aside-box h2{
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+
+    border-bottom: 2px solid #EFEFEF;
+
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+}
+
+.aside-box form{
+    /* border: 1px solid red; */
+    margin-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.aside-box form input{
+    height: 40px;
+    width: 81%;     
+    border: 1px solid #EFEFEF; 
+    text-align: center;
+}
+
+.aside-box form button{
+    width: 15%;
+    border: 1px solid #A6A6A6;
+    background-color: #A6A6A6;
+    padding: 10px;
+}
+.aside-box form button i{
+    color: white;
+    font-size: 17px;
+}
+
+.aside-box ul{
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+ 
+    width: 80%;
+
+}
+.aside-box ul li{
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.aside-box ul li a{
+    text-decoration:  none;
+    color: #A6A6A6;
+}
+
+.aside-box ul li :hover{
+    text-decoration:  underline;
+    color: red;
+}
+
+.aside-box p{
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.aside-box #mkt{
+    display: block;
+}
+
+.aside-box #email-mkt{
+    width: 90%;     
+    border: 1px solid #c0b2b2; 
+    text-align: center;
+    margin-left: 5%;
+    margin-right: auto;
+    max-width: initial;
+
+
+}
